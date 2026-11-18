@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.2
+
+- The repository moved to [tntechdotdev/ha-qnetd-addon](https://github.com/tntechdotdev/ha-qnetd-addon). The pairing command now downloads `qdevice-setup.sh` from there, and the add-on and README links point there. The old `samohtnt` address redirects.
+
 ## 1.1.1
 
 - The setup command recovers when `pvecm qdevice setup` adds the QDevice but `corosync-qdevice` fails to start on a node with `Can't read quorum.device.model cmap key`. It reloads corosync.conf and starts the daemon again, then checks the vote. This happened on a real Proxmox VE 9 cluster.

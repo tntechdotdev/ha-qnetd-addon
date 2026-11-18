@@ -2,7 +2,7 @@
 #
 # qdevice-setup.sh: give a Proxmox VE cluster a tie-breaker vote from the
 # "Proxmox QNetd" Home Assistant add-on.
-# Source: https://github.com/samohtnt/ha-qnetd-addon
+# Source: https://github.com/tntechdotdev/ha-qnetd-addon
 #
 # You run this as root on ONE node of the cluster. The add-on's log prints the full
 # command line, including the one-time pairing code and the add-on's SSH host key.

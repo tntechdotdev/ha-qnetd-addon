@@ -109,7 +109,7 @@ open_pairing() {
   log " Pairing is open for $minutes minutes."
   log " On one Proxmox node, as root, run:"
   log ""
-  log "   curl -fsSLo /tmp/qdevice-setup.sh https://raw.githubusercontent.com/samohtnt/ha-qnetd-addon/$ref/qdevice-setup.sh && bash /tmp/qdevice-setup.sh ${ip:-HA_IP} --port $host_port --code $code --host-key $fingerprint"
+  log "   curl -fsSLo /tmp/qdevice-setup.sh https://raw.githubusercontent.com/tntechdotdev/ha-qnetd-addon/$ref/qdevice-setup.sh && bash /tmp/qdevice-setup.sh ${ip:-HA_IP} --port $host_port --code $code --host-key $fingerprint"
   log ""
   [ -n "$ip" ] || log " Replace HA_IP with the IP address of this Home Assistant device."
   log " The command checks the cluster, runs pvecm qdevice setup, and closes pairing."

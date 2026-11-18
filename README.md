@@ -1,6 +1,6 @@
 # Proxmox QNetd add-on for Home Assistant
 
-[![CI](https://github.com/samohtnt/ha-qnetd-addon/actions/workflows/ci.yaml/badge.svg)](https://github.com/samohtnt/ha-qnetd-addon/actions/workflows/ci.yaml)
+[![CI](https://github.com/tntechdotdev/ha-qnetd-addon/actions/workflows/ci.yaml/badge.svg)](https://github.com/tntechdotdev/ha-qnetd-addon/actions/workflows/ci.yaml)
 
 This repository has one Home Assistant add-on, **Proxmox QNetd**. It runs `corosync-qnetd` on a Home Assistant device, so a two-node Proxmox VE cluster has a third vote and keeps quorum when one node is down.
 
@@ -9,7 +9,7 @@ The add-on builds on the device from `debian:trixie-slim`, for `aarch64` and `am
 ## Install
 
 1. In Home Assistant, go to **Settings** > **Add-ons** > **Add-on Store**.
-2. Open the menu (three dots) and select **Repositories**. Add `https://github.com/samohtnt/ha-qnetd-addon`.
+2. Open the menu (three dots) and select **Repositories**. Add `https://github.com/tntechdotdev/ha-qnetd-addon`.
 3. Install **Proxmox QNetd** and start it.
 4. Open the add-on **Log** tab, copy the command it shows, and paste it into a root shell on one Proxmox node.
 
